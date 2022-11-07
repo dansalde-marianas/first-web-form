@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Web Form</title>
+</head>
+<body>
+    <h1>My First Web Form</h1>
+    <form method="POST" action="https://jkorpela.fi/cgi-bin/echo.cgi" target="cgi-results" >
+        <fieldset >
+            <legend>Name Information:</legend>
+            <label for="firstName" id="firstName">First Name:</label>
+            <input type="text" class="name-info" tabindex="0" required id="firstName" name="firstName" placeholder="Please type your first name" ><br>
+            <label for="lastName" id="lastName">Last Name:</label>
+            <input type="text" class="name-info" tabindex="1" required id="lastName" name="lastName" placeholder="Please type your last name">
+        </fieldset>
+        <fieldset>
+            <legend>Contact Information:</legend>
+            <label for="email">Email:</label>
+            <input type="email" class="contact-info"title="Input your email address" tabindex="5" name="email" id="email" placeholder="Input your Email Address"><br>
+            <label for="telephone">Phone:</label>
+            <input type="tel" class="contact-info" name="telephone" value="670123456" tabindex="4" id="telephone" placeholder="Input your email Adresss">
+        </fieldset>
+        <fieldset>
+            <legend>Date of Birth:</legend>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" name="dob" min="1923" max="2022" id="dob"><br>
+        </fieldset>
+        <input type="submit">
+    </form>
+</body>
+</html>
